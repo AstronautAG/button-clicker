@@ -10,6 +10,7 @@ Start the timer then click the button as many times as you can before the minute
 Just click the link below to play it live in your browser!
 
 ## Demo Link
+https://astronautag.github.io/button-clicker/
 
 ## GitHub Repository Link
 https://github.com/AstronautAG/button-clicker
