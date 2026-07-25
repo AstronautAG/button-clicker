@@ -12,17 +12,21 @@
             </h2>
         </div>
         <div>
-            <h2>Timer</h2>
-            <div id="timer">60</div>
+            <h2 class="heading">Timer</h2>
+            <h3 id="timer">60</h3>
             <!--<video width="320" height="240" controls>
                 <source src="Countdown.mp4.mp4" type="video/mp4">
                 Your browser does not support the video type.
             </video>-->
-            <button id="startTimer">Start Timer</button>
+            <button class="startTimer" id="startTimer">Start Timer</button>
         </div>
         <div>
-            <h2>Score: <span id="score">0</span></h2>
-            <button id="click" disabled>Click</button>
+            <h2 class="score">Score: <span id="score">0</span></h2>
+            <button class="click" id="click" disabled>Click</button>
+            <div id="resultDiv" class="hidden">
+                <h2>Result</h2>
+                <h4 id="result"></h4>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
