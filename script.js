@@ -24,9 +24,9 @@ start.addEventListener("click", function() {
       timer.textContent = "Time's up!";
       click.disabled = true;
 
-      if (score > 450) {
+      if (score > 550) {
         resultText = "Great Job! You beat the game!"
-      } else if (score > 300) {
+      } else if (score > 350) {
         resultText = "So close! Try again to get a better score!"
       } else {
         resultText = "Almost there! Re-try for a better score!"
