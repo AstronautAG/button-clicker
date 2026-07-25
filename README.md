@@ -12,3 +12,4 @@ Just click the link below to play it live in your browser!
 ## Demo Link
 
 ## GitHub Repository Link
+https://github.com/AstronautAG/button-clicker
