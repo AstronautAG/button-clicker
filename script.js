@@ -23,7 +23,7 @@ if (start) {
                 timer.textContent = "Time's up!";
                 click.disabled = true;
                 if (score > 300) {
-                    resultText = "Great Job! You beat the game!";
+                    resultText = "Great Job! You beat the level!";
                 } else if (score > 150) {
                     resultText = "So close! Try again to get a better score!";
                 } else {
@@ -68,7 +68,7 @@ if (start2) { // Only runs if Level 2 elements exist on the page
                 click2.disabled = true;
                 // Note: Level 2 goal updated to 450 to match your HTML text
                 if (score2 > 450) { 
-                    resultText2 = "Great Job! You beat the game!";
+                    resultText2 = "Great Job! You beat the level!";
                 } else if (score2 > 225) {
                     resultText2 = "So close! Try again to get a better score!";
                 } else {
