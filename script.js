@@ -24,9 +24,9 @@ start.addEventListener("click", function() {
       timer.textContent = "Time's up!";
       click.disabled = true;
 
-      if (score > 567) {
+      if (score > 300) {
         resultText = "Great Job! You beat the game!"
-      } else if (score > 350) {
+      } else if (score > 150) {
         resultText = "So close! Try again to get a better score!"
       } else {
         resultText = "Almost there! Re-try for a better score!"
@@ -42,4 +42,52 @@ start.addEventListener("click", function() {
 click.addEventListener("click", function() {
   score++;
   scoreElement.textContent = score;
+});
+
+// level 2
+
+let seconds2 = 60;
+let score2 = 0;
+let isPlaying2 = false;
+let resultText2 = "";
+
+const timer2 = document.getElementById("timer2");
+const start2 = document.getElementById("startTimer2");
+const click2 = document.getElementById("click2");
+const scoreElement2 = document.getElementById("score2");
+const result2 = document.getElementById("result2");
+const resultDiv2 = document.getElementById("resultDiv2");
+
+
+start2.addEventListener("click", function() {
+  start2.disabled = true;
+  click2.disabled = false;
+
+  const countdown2 = setInterval(function() {
+    seconds2--;
+    timer2.textContent = seconds2;
+  
+    if (seconds2 <= 0) {
+      clearInterval(countdown2);
+      timer2.textContent = "Time's up!";
+      click2.disabled = true;
+
+      if (score2 > 300) {
+        resultText2 = "Great Job! You beat the game!"
+      } else if (score2 > 150) {
+        resultText2 = "So close! Try again to get a better score!"
+      } else {
+        resultText2 = "Almost there! Re-try for a better score!"
+      }
+      result2.textContent = resultText;
+
+      resultDiv2.classList.remove("hidden");
+      resultDiv2.classList.add("result");
+    }
+  }, 1000);
+});
+
+click2.addEventListener("click", function() {
+  score2++;
+  scoreElement2.textContent = score2;
 });
