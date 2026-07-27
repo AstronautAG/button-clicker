@@ -174,6 +174,8 @@ if (start4) {
     });
 }
 
+const start5 = document.getElementById("startTimer5");
+
 if (start5) { 
     let seconds5 = 60;
     let score5 = 0;
